@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="San Luis">
+    <defs>
+        <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#e8c7a0"/>
+            <stop offset="1" stop-color="#b88355"/>
+        </linearGradient>
+        <linearGradient id="hill" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#4a2d1a"/>
+            <stop offset="1" stop-color="#2a1c2f"/>
+        </linearGradient>
+        <radialGradient id="sun" cx="50%" cy="50%" r="50%">
+            <stop offset="0" stop-color="#fff4cf"/>
+            <stop offset="1" stop-color="#ffe6a8"/>
+        </radialGradient>
+    </defs>
+    <rect width="1600" height="900" fill="url(#sky)"/>
+    <circle cx="1260" cy="200" r="110" fill="url(#sun)" opacity="0.9"/>
+    <path d="M0 600 L180 470 L330 560 L520 430 L710 570 L900 450 L1100 590 L1300 470 L1480 580 L1600 500 L1600 900 L0 900 Z" fill="#4a2d1a" opacity="0.5"/>
+    <path d="M0 690 L240 580 L430 670 L640 540 L860 690 L1080 570 L1300 680 L1480 600 L1600 670 L1600 900 L0 900 Z" fill="url(#hill)"/>
+    <path d="M0 790 Q320 730 640 780 T1280 760 T1600 780 L1600 900 L0 900 Z" fill="#1b1420"/>
+    <text x="90" y="170" fill="#fff8ec" font-family="Georgia, 'Times New Roman', serif" font-size="122" font-weight="700">San Luis</text>
+    <text x="94" y="228" fill="#ffe6a8" font-family="Segoe UI, Arial, sans-serif" font-size="28" letter-spacing="10">CAÑETE 360</text>
+    <text x="94" y="264" fill="#fff8ec" opacity="0.8" font-family="Segoe UI, Arial, sans-serif" font-size="21" letter-spacing="4">AVENTURA · GASTRONOMÍA · CULTURA</text>
+    <text x="1510" y="840" text-anchor="end" fill="#fff8ec" opacity="0.55" font-family="Segoe UI, Arial, sans-serif" font-size="22">Imagen referencial</text>
+</svg>

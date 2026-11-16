@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Administración de distritos, categorías, atractivos, servicios, turistas y rutas de Cañete 360.">
+    <title>Administración | Cañete 360</title>
+    <link rel="icon" href="logo.jpg" type="image/jpeg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="panel.css">
+</head>
+<body>
+    <header>
+        <a class="logo" href="index.html" aria-label="Cañete 360 - Inicio">
+            <picture>
+                <source srcset="logo.svg" type="image/svg+xml">
+                <img src="logo.jpg" alt="Cañete 360">
+            </picture>
+        </a>
+
+        <div class="header-content">
+            <nav class="nav-top" aria-label="Navegación principal">
+                <div class="nav-links">
+                    <a class="brand-link" href="index.html#canete360">Cañete360</a>
+                    <hr class="divider-vertical" aria-hidden="true">
+                    <a class="nav-link" href="index.html#acerca">acerca de Cañete</a>
+                </div>
+
+                <div class="div-contactos">
+                    <!--
+                    <a class="contact-link" href="#contacto" aria-label="Escríbenos por WhatsApp" title="WhatsApp">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M0 0h24v24H0z" fill="none" />
+                            <g fill="none">
+                                <g clip-path="url(#SVGXv8lpc2Y)">
+                                    <path fill="currentColor" fill-rule="evenodd" d="M17.415 14.382c-.298-.149-1.759-.867-2.031-.967s-.47-.148-.669.15c-.198.297-.767.966-.94 1.164c-.174.199-.347.223-.644.075c-.297-.15-1.255-.463-2.39-1.475c-.883-.788-1.48-1.761-1.653-2.059c-.173-.297-.019-.458.13-.606c.134-.133.297-.347.446-.52s.198-.298.297-.497c.1-.198.05-.371-.025-.52c-.074-.149-.668-1.612-.916-2.207c-.241-.579-.486-.5-.668-.51c-.174-.008-.372-.01-.57-.01s-.52.074-.792.372c-.273.297-1.04 1.016-1.04 2.479c0 1.462 1.064 2.875 1.213 3.074s2.095 3.2 5.076 4.487c.71.306 1.263.489 1.694.625c.712.227 1.36.195 1.872.118c.57-.085 1.758-.719 2.006-1.413s.247-1.289.173-1.413s-.272-.198-.57-.347m-5.422 7.403h-.004a9.87 9.87 0 0 1-5.032-1.378l-.36-.214l-3.742.982l.999-3.648l-.235-.374a9.86 9.86 0 0 1-1.511-5.26c.002-5.45 4.436-9.884 9.889-9.884a9.8 9.8 0 0 1 6.988 2.899a9.82 9.82 0 0 1 2.892 6.992c-.002 5.45-4.436 9.885-9.884 9.885m8.412-18.297A11.82 11.82 0 0 0 11.992 0C5.438 0 .102 5.335.1 11.892a11.86 11.86 0 0 0 1.587 5.945L0 24l6.304-1.654a11.9 11.9 0 0 0 5.684 1.448h.005c6.554 0 11.89-5.335 11.892-11.893a11.82 11.82 0 0 0-3.48-8.413" clip-rule="evenodd" />
+                                </g>
+                                <defs>
+                                    <clipPath id="SVGXv8lpc2Y">
+                                        <path fill="#fff" d="M0 0h24v24H0z" />
+                                    </clipPath>
+                                </defs>
+                            </g>
+                        </svg>
+                    </a>
+                    <a class="contact-link" href="#contacto" aria-label="Contáctanos por teléfono" title="Teléfono">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M0 0h24v24H0z" fill="none" />
+                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 3C4.239 3 2 5.216 2 7.95c0 2.207.875 7.445 9.488 12.74a.99.99 0 0 0 1.024 0C21.126 15.395 22 10.157 22 7.95C22 5.216 19.761 3 17 3s-5 3-5 3s-2.239-3-5-3" />
+                        </svg>
+                    </a>
+                    <a class="contact-link" href="#contacto" aria-label="Ver nuestro perfil" title="Perfil">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" aria-hidden="true">
+                            <path d="M0 0h16v16H0z" fill="none" />
+                            <g fill="currentColor">
+                                <path d="M11 6a3 3 0 1 1-6 0a3 3 0 0 1 6 0" />
+                                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                            </g>
+                        </svg>
+                    </a>
+                    -->
+                </div>
+            </nav>
+
+            <hr class="nav-separator">
+
+            <nav class="nav-bottom" aria-label="Explora Cañete">
+                <div class="nav-item">
+                    <a class="nav-link" href="index.html#destinos">
+                        destinos
+                        <svg class="chevron" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4" d="m6 9 6 6 6-6" />
+                        </svg>
+                    </a>
+                    <ul class="submenu">
+                        <li><a href="distritos/Asia.html">Asia</a></li>
+                        <li><a href="distritos/Calango.html">Calango</a></li>
+                        <li><a href="distritos/CerroAzul.html">Cerro Azul</a></li>
+                        <li><a href="distritos/Chilca.html">Chilca</a></li>
+                        <li><a href="distritos/Coayllo.html">Coayllo</a></li>
+                        <li><a href="distritos/Imperial.html">Imperial</a></li>
+                        <li><a href="distritos/Lunahuana.html">Lunahuaná</a></li>
+                        <li><a href="distritos/Mala.html">Mala</a></li>
+                        <li><a href="distritos/NuevoImperial.html">Nuevo Imperial</a></li>
+                        <li><a href="distritos/Pacaran.html">Pacarán</a></li>
+                        <li><a href="distritos/Quilmana.html">Quilmaná</a></li>
+                        <li><a href="distritos/SanAntonio.html">San Antonio</a></li>
+                        <li><a href="distritos/SanLuis.html">San Luis</a></li>
+                        <li><a href="distritos/SantaCruzDeFlores.html">Santa Cruz de Flores</a></li>
+                        <li><a href="distritos/SanVicente.html">San Vicente de Cañete</a></li>
+                        <li><a href="distritos/Zuñiga.html">Zúñiga</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav-item">
+                    <a class="nav-link" href="index.html#categorias">
+                        categorias
+                        <svg class="chevron" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4" d="m6 9 6 6 6-6" />
+                        </svg>
+                    </a>
+                    <ul class="submenu">
+                        <li><a href="index.html#aventura">Aventura y deporte</a></li>
+                        <li><a href="index.html#gastronomia">Gastronomía</a></li>
+                        <li><a href="index.html#cultura">Cultura viva</a></li>
+                    </ul>
+                </div>
+
+                <a class="nav-link" href="panel-reserva.html">reservar ruta</a>
+
+                <a class="nav-link" href="gerencias.html">gerencias</a>
+
+                <!-- <a class="nav-cta" href="index.html#destinos">todos los distritos</a> -->
+            </nav>
+        </div>
+    </header>
+
+    <main class="panel-main">
+        <section class="page-hero">
+            <p class="eyebrow">Administración</p>
+            <h1>Gestión de catálogos y rutas</h1>
+            <p>CRUD directo sobre distritos, categorías, atractivos, servicios y turistas. También puedes consultar y eliminar rutas registradas.</p>
+            <div class="hero-actions no-print">
+                <a class="btn btn-primary" href="panel-reserva.html">Ir al panel de reserva</a>
+                <a class="btn btn-ghost" href="gerencias.html">Ver gerencias</a>
+            </div>
+        </section>
+
+        <div id="page-alert" class="alert alert-error" role="alert" hidden></div>
+
+        <section class="card" style="margin-top:1.2rem;">
+            <div class="tabs" id="admin-tabs" role="tablist" aria-label="Recursos administrables"></div>
+            <div id="admin-panels"></div>
+        </section>
+
+        <div class="alert alert-info" style="margin-top:1rem;">
+            <strong>Nota:</strong> no se pueden eliminar registros que estén en uso. Por ejemplo, un distrito con atractivos o un atractivo que forme parte de una ruta registrada. En esos casos el sistema mostrará el motivo.
+        </div>
+    </main>
+
+    <footer class="panel-footer">
+        <p>Cañete 360 · Administración de catálogos y rutas</p>
+        <p>Los cambios se aplican directamente sobre la base de datos MySQL.</p>
+    </footer>
+
+    <div class="modal" id="modal" hidden aria-hidden="true">
+        <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+            <div class="modal-head">
+                <h2 id="modal-title">Editar registro</h2>
+                <button type="button" class="modal-close" id="modal-close" aria-label="Cerrar">&times;</button>
+            </div>
+            <form id="modal-form" class="form-grid" novalidate></form>
+            <div class="modal-actions">
+                <button type="button" class="btn btn-ghost" id="modal-cancel">Cancelar</button>
+                <button type="submit" class="btn btn-primary" id="modal-save" form="modal-form">Guardar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="api-config.js"></script>
+    <script src="panel-utils.js"></script>
+    <script src="admin.js"></script>
+</body>
+</html>

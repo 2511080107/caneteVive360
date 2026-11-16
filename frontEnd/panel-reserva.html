@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Diseña tu ruta turística por Cañete: elige entre 3 y 5 atractivos, define el orden, el tiempo de visita y la gerencia que te acompañará.">
+    <title>Reservar ruta | Cañete 360</title>
+    <link rel="icon" href="logo.jpg" type="image/jpeg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="panel.css">
+</head>
+<body>
+    <header>
+        <a class="logo" href="index.html" aria-label="Cañete 360 - Inicio">
+            <picture>
+                <source srcset="logo.svg" type="image/svg+xml">
+                <img src="logo.jpg" alt="Cañete 360">
+            </picture>
+        </a>
+
+        <div class="header-content">
+            <nav class="nav-top" aria-label="Navegación principal">
+                <div class="nav-links">
+                    <a class="brand-link" href="index.html#canete360">Cañete360</a>
+                    <hr class="divider-vertical" aria-hidden="true">
+                    <a class="nav-link" href="index.html#acerca">acerca de Cañete</a>
+                </div>
+
+                <div class="div-contactos">
+                    <!--
+                    <a class="contact-link" href="#contacto" aria-label="Escríbenos por WhatsApp" title="WhatsApp">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M0 0h24v24H0z" fill="none" />
+                            <g fill="none">
+                                <g clip-path="url(#SVGXv8lpc2Y)">
+                                    <path fill="currentColor" fill-rule="evenodd" d="M17.415 14.382c-.298-.149-1.759-.867-2.031-.967s-.47-.148-.669.15c-.198.297-.767.966-.94 1.164c-.174.199-.347.223-.644.075c-.297-.15-1.255-.463-2.39-1.475c-.883-.788-1.48-1.761-1.653-2.059c-.173-.297-.019-.458.13-.606c.134-.133.297-.347.446-.52s.198-.298.297-.497c.1-.198.05-.371-.025-.52c-.074-.149-.668-1.612-.916-2.207c-.241-.579-.486-.5-.668-.51c-.174-.008-.372-.01-.57-.01s-.52.074-.792.372c-.273.297-1.04 1.016-1.04 2.479c0 1.462 1.064 2.875 1.213 3.074s2.095 3.2 5.076 4.487c.71.306 1.263.489 1.694.625c.712.227 1.36.195 1.872.118c.57-.085 1.758-.719 2.006-1.413s.247-1.289.173-1.413s-.272-.198-.57-.347m-5.422 7.403h-.004a9.87 9.87 0 0 1-5.032-1.378l-.36-.214l-3.742.982l.999-3.648l-.235-.374a9.86 9.86 0 0 1-1.511-5.26c.002-5.45 4.436-9.884 9.889-9.884a9.8 9.8 0 0 1 6.988 2.899a9.82 9.82 0 0 1 2.892 6.992c-.002 5.45-4.436 9.885-9.884 9.885m8.412-18.297A11.82 11.82 0 0 0 11.992 0C5.438 0 .102 5.335.1 11.892a11.86 11.86 0 0 0 1.587 5.945L0 24l6.304-1.654a11.9 11.9 0 0 0 5.684 1.448h.005c6.554 0 11.89-5.335 11.892-11.893a11.82 11.82 0 0 0-3.48-8.413" clip-rule="evenodd" />
+                                </g>
+                                <defs>
+                                    <clipPath id="SVGXv8lpc2Y">
+                                        <path fill="#fff" d="M0 0h24v24H0z" />
+                                    </clipPath>
+                                </defs>
+                            </g>
+                        </svg>
+                    </a>
+                    <a class="contact-link" href="#contacto" aria-label="Contáctanos por teléfono" title="Teléfono">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M0 0h24v24H0z" fill="none" />
+                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 3C4.239 3 2 5.216 2 7.95c0 2.207.875 7.445 9.488 12.74a.99.99 0 0 0 1.024 0C21.126 15.395 22 10.157 22 7.95C22 5.216 19.761 3 17 3s-5 3-5 3s-2.239-3-5-3" />
+                        </svg>
+                    </a>
+                    <a class="contact-link" href="#contacto" aria-label="Ver nuestro perfil" title="Perfil">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" aria-hidden="true">
+                            <path d="M0 0h16v16H0z" fill="none" />
+                            <g fill="currentColor">
+                                <path d="M11 6a3 3 0 1 1-6 0a3 3 0 0 1 6 0" />
+                                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                            </g>
+                        </svg>
+                    </a>
+                    -->
+                </div>
+            </nav>
+
+            <hr class="nav-separator">
+
+            <nav class="nav-bottom" aria-label="Explora Cañete">
+                <div class="nav-item">
+                    <a class="nav-link" href="index.html#destinos">
+                        destinos
+                        <svg class="chevron" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4" d="m6 9 6 6 6-6" />
+                        </svg>
+                    </a>
+                    <ul class="submenu">
+                        <li><a href="distritos/Asia.html">Asia</a></li>
+                        <li><a href="distritos/Calango.html">Calango</a></li>
+                        <li><a href="distritos/CerroAzul.html">Cerro Azul</a></li>
+                        <li><a href="distritos/Chilca.html">Chilca</a></li>
+                        <li><a href="distritos/Coayllo.html">Coayllo</a></li>
+                        <li><a href="distritos/Imperial.html">Imperial</a></li>
+                        <li><a href="distritos/Lunahuana.html">Lunahuaná</a></li>
+                        <li><a href="distritos/Mala.html">Mala</a></li>
+                        <li><a href="distritos/NuevoImperial.html">Nuevo Imperial</a></li>
+                        <li><a href="distritos/Pacaran.html">Pacarán</a></li>
+                        <li><a href="distritos/Quilmana.html">Quilmaná</a></li>
+                        <li><a href="distritos/SanAntonio.html">San Antonio</a></li>
+                        <li><a href="distritos/SanLuis.html">San Luis</a></li>
+                        <li><a href="distritos/SantaCruzDeFlores.html">Santa Cruz de Flores</a></li>
+                        <li><a href="distritos/SanVicente.html">San Vicente de Cañete</a></li>
+                        <li><a href="distritos/Zuñiga.html">Zúñiga</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav-item">
+                    <a class="nav-link" href="index.html#categorias">
+                        categorias
+                        <svg class="chevron" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4" d="m6 9 6 6 6-6" />
+                        </svg>
+                    </a>
+                    <ul class="submenu">
+                        <li><a href="index.html#aventura">Aventura y deporte</a></li>
+                        <li><a href="index.html#gastronomia">Gastronomía</a></li>
+                        <li><a href="index.html#cultura">Cultura viva</a></li>
+                    </ul>
+                </div>
+
+                <a class="nav-link" href="panel-reserva.html">reservar ruta</a>
+
+                <a class="nav-link" href="gerencias.html">gerencias</a>
+
+                <!-- <a class="nav-cta" href="index.html#destinos">todos los distritos</a> -->
+            </nav>
+        </div>
+    </header>
+
+    <main class="panel-main">
+        <section class="page-hero">
+            <p class="eyebrow">Panel del turista</p>
+            <h1>Diseña tu ruta por Cañete</h1>
+            <p>Registra tus datos, elige una gerencia de acompañamiento y arma una ruta con 3 a 5 atractivos. Ordena las paradas, define cuánto tiempo deseas permanecer en cada lugar y ponle nombre y fecha de visita a tu recorrido.</p>
+        </section>
+
+        <div id="page-alert" class="alert alert-error" role="alert" hidden></div>
+
+        <div class="booking-layout" id="booking-layout">
+            <div class="booking-column">
+                <section class="card">
+                    <div class="card-head">
+                        <div>
+                            <span class="step-tag">Paso 1</span>
+                            <h2 class="card-title">Tus datos</h2>
+                            <p class="card-sub">Solo necesitamos tus nombres, apellidos y correo. Si tu correo ya existe, actualizaremos tu registro.</p>
+                        </div>
+                    </div>
+
+                    <form id="tourist-form" class="form-grid" novalidate autocomplete="on">
+                        <div class="field">
+                            <label for="nombres">Nombres completos</label>
+                            <input id="nombres" name="nombres" type="text" autocomplete="given-name" placeholder="Ej. Ana María" required>
+                            <small class="field-error" data-error="nombres"></small>
+                        </div>
+
+                        <div class="field">
+                            <label for="apellidos">Apellidos completos</label>
+                            <input id="apellidos" name="apellidos" type="text" autocomplete="family-name" placeholder="Ej. Pérez Quispe" required>
+                            <small class="field-error" data-error="apellidos"></small>
+                        </div>
+
+                        <div class="field full">
+                            <label for="correo">Correo electrónico</label>
+                            <input id="correo" name="correo" type="email" autocomplete="email" placeholder="tucorreo@ejemplo.com" required>
+                            <small class="field-error" data-error="correo"></small>
+                        </div>
+                    </form>
+                </section>
+
+                <section class="card">
+                    <div class="card-head">
+                        <div>
+                            <span class="step-tag">Paso 2</span>
+                            <h2 class="card-title">Selecciona tus atractivos</h2>
+                            <p class="card-sub">Explora los 80 atractivos de la base de datos y filtra por distrito, categoría o texto. La ruta debe tener entre 3 y 5 atractivos sin repetir.</p>
+                        </div>
+                        <span class="badge badge-neutral" id="atractivos-count">0 de 3 a 5</span>
+                    </div>
+
+                    <div class="filter-bar">
+                        <div class="field">
+                            <label for="filtro-distrito">Distrito</label>
+                            <select id="filtro-distrito">
+                                <option value="">Todos los distritos</option>
+                            </select>
+                        </div>
+
+                        <div class="field">
+                            <label for="filtro-categoria">Categoría</label>
+                            <select id="filtro-categoria">
+                                <option value="">Todas las categorías</option>
+                            </select>
+                        </div>
+
+                        <div class="field wide">
+                            <label for="filtro-q">Buscar atractivo</label>
+                            <input id="filtro-q" type="search" placeholder="Nombre, dirección o descripción">
+                        </div>
+                    </div>
+
+                    <div class="loading" id="atractivos-loading">Cargando atractivos...</div>
+                    <div class="atractivo-list" id="atractivos-list" hidden></div>
+                    <div class="empty" id="atractivos-empty" hidden>No se encontraron atractivos con esos filtros.</div>
+                </section>
+
+                <section class="card">
+                    <div class="card-head">
+                        <div>
+                            <span class="step-tag">Paso 3</span>
+                            <h2 class="card-title">Servicio, orden y tiempo de visita</h2>
+                            <p class="card-sub">Elige la gerencia que te acompañará, ordena las paradas con las flechas y define los minutos que deseas permanecer en cada atractivo (mínimo 15, máximo 1440).</p>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label for="servicio">Servicio / gerencia</label>
+                        <select id="servicio" name="servicio" required>
+                            <option value="">Cargando servicios...</option>
+                        </select>
+                        <small class="field-error" data-error="servicio"></small>
+                    </div>
+
+                    <div class="alert alert-info" id="servicio-detalle" hidden></div>
+
+                    <div class="counter">
+                        <span id="selection-hint" class="warn">Añade al menos 3 atractivos.</span>
+                        <span id="selection-total">0 min</span>
+                    </div>
+
+                    <div class="empty" id="selected-empty">Aún no has añadido atractivos a tu ruta.</div>
+                    <div class="route-builder" id="selected-list" hidden></div>
+                </section>
+
+                <section class="card">
+                    <div class="card-head">
+                        <div>
+                            <span class="step-tag">Paso 4</span>
+                            <h2 class="card-title">Nombre y fecha de la ruta</h2>
+                            <p class="card-sub">Ponle un nombre a tu recorrido y elige la fecha en que deseas realizarlo.</p>
+                        </div>
+                    </div>
+
+                    <div class="form-grid">
+                        <div class="field full">
+                            <label for="nombre-ruta">Nombre de la ruta</label>
+                            <input id="nombre-ruta" name="nombre_ruta" type="text" maxlength="120" placeholder="Ej. Ruta de aventura por Lunahuaná" required>
+                            <small class="field-error" data-error="nombre-ruta"></small>
+                        </div>
+
+                        <div class="field full">
+                            <label for="fecha-visita">Fecha de la ruta</label>
+                            <input id="fecha-visita" name="fecha_visita" type="date" required>
+                            <small class="field-error" data-error="fecha-visita"></small>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <aside class="summary card" aria-label="Resumen de la ruta">
+                <span class="step-tag">Resumen</span>
+                <h2 class="card-title">Tu ruta</h2>
+                <p class="card-sub" id="summary-tourist">Completa tus datos para comenzar.</p>
+
+                <ul class="summary-list">
+                    <li class="summary-row"><span>Atractivos</span><strong id="sum-atractivos">0</strong></li>
+                    <li class="summary-row"><span>Distritos</span><strong id="sum-distritos">0</strong></li>
+                    <li class="summary-row"><span>Categorías</span><strong id="sum-categorias">0</strong></li>
+                    <li class="summary-row"><span>Tiempo total</span><strong id="sum-tiempo">0 min</strong></li>
+                    <li class="summary-row"><span>Servicio</span><strong id="sum-servicio">Sin elegir</strong></li>
+                    <li class="summary-row"><span>Nombre</span><strong id="sum-nombre">Sin definir</strong></li>
+                    <li class="summary-row"><span>Fecha</span><strong id="sum-fecha">Sin elegir</strong></li>
+                </ul>
+
+                <ol class="selected-mini" id="summary-mini"></ol>
+
+                <div class="summary-total">
+                    <span>Duración estimada</span>
+                    <span id="sum-horas">0 h</span>
+                </div>
+
+                <p class="hint" id="summary-hint">Revisa el resumen y registra tu ruta con la gerencia seleccionada.</p>
+
+                <button type="button" class="btn btn-primary" id="btn-submit" style="width:100%; margin-top:1rem;" disabled>
+                    Enviar mi ruta
+                </button>
+                <p class="text-small muted" style="margin:.6rem 0 0;">
+                    Al enviar se registran tus datos en <span class="inline-code">turista</span>, la ruta en <span class="inline-code">ruta</span> y cada parada en <span class="inline-code">detalle_ruta</span>.
+                </p>
+            </aside>
+        </div>
+
+        <section class="card success-panel" id="success-panel" hidden aria-live="polite">
+            <span class="success-icon" aria-hidden="true">&#10003;</span>
+            <h2 class="card-title">¡Ruta registrada!</h2>
+            <p class="card-sub" id="success-message"></p>
+            <div class="success-summary" id="success-summary"></div>
+            <div class="hero-actions" style="justify-content:center;">
+                <a class="btn btn-primary" id="success-link" href="gerencias.html">Ver gerencias</a>
+                <button type="button" class="btn btn-ghost" id="success-again">Crear otra ruta</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="panel-footer">
+        <p>Cañete 360 · Turismo, cultura y aventura en la provincia de Cañete</p>
+        <p>Los datos se almacenan en la base de datos del sistema y se muestran en el panel de gerencias.</p>
+    </footer>
+
+    <script src="api-config.js"></script>
+    <script src="panel-utils.js"></script>
+    <script src="panel-reserva.js"></script>
+</body>
+</html>
